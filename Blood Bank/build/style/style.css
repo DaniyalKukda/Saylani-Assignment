@@ -1,0 +1,203 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: #F5F5F5;
+    transition: all 3s ease-in;
+}
+nav{
+    width: 100%;
+    background-color: #e74c3c;
+}
+ul{
+    width: 80%;
+    margin: 0 18%;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ul li:hover{
+    background: white;
+    border-radius: 25px 0px 25px 0px;
+    color: #EF5350;
+}
+ul li:hover a{
+    color: #EF5350;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: #e74c3c;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: none;
+    color: white;
+}
+.toggle a{
+    color: white;
+}
+.reg{
+    float: right;
+}
+.logo{
+    width: 17%;
+    /* border: 2px solid black; */
+    float: left;
+    margin: 13px 10%;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 160%;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.middle{
+    margin: 0 auto;
+}
+div div h1 , #modal-title{
+    color: white;
+    background: #EF5350;
+    border-radius: 25px 0px 25px 0px;
+    padding: 10px;
+    font-family:"hobo std";
+    text-align: center;
+}
+.paraDiv{
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    text-align: justify;
+    border-radius: 0px 16px 0px 16px;
+    margin-left: 80px;
+    background: #1abc9c;
+}
+.btg{
+    background: #EF5350;
+    color: white;
+}
+.fasad {
+    margin-left: -12px;
+    margin-right: 8px;
+    display: none;
+  }
+.donorHeading{
+    color: #e74c3c;
+    background: #ecf0f1;
+    font-family:"hobo std";
+    text-align: justify;
+}
+.p1{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.img{
+    margin: 50px;
+    margin-top: 0px;
+    border-radius: 15px;
+}
+.btn-donar{
+    margin: 50px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+footer{
+    width: 100%;
+    background: #e74c3c;
+    height: 70px;
+    color: white;
+    position: static;
+    float: left;
+    bottom: 0;
+    font-family: 'hobo std';
+}
+.center{
+    float: none;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    background: #EF5350;
+    padding: 20px 60px;
+    border-radius: 25px 0px 20px 0px;
+    box-shadow: 2px 3px 8px tomato;
+}
+.profileimg{
+    border-radius: 50px;
+    display: inline;
+}
+.abh{
+    letter-spacing: 2px;
+    font-family: "hobo std";
+    color: #2d3436;
+    font-weight: bolder;
+    margin-left: 1.8%;
+}
+.abhpara{
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+.abhimg{
+    border-radius:30px;
+     box-shadow:10px 10px 20px 0px tomato;
+     margin-top:20%;
+}
+.primg{
+    border-radius: 65px;
+    height: 130px;
+    width: 130px;
+}
+@media(max-width:786px){
+    .toggle{
+        display: block;
+    }
+    ul{
+        width: 100%;
+        display: none;
+    }
+    ul li{
+        display: block;
+        text-align: left;
+    }
+    .reg{
+        float: none;
+    }
+    .logo{
+        display: none;
+    }
+    .logo a{
+        display: none;
+    }
+    .paraDiv{
+        margin-left: 0px;
+    }
+    .img{
+        margin: 0px;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 300px;
+    }
+    .btn-donar{
+        margin: 0px;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+    *{
+        margin: 0px;
+    }
+    .abhimg{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+}

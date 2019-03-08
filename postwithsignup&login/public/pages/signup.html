@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fire Post</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Fire Post</a>
+            </div>
+            <div class="">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html">Login<span class="glyphicon glyphicon-log-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container" style="margin-top:0px;">
+       <div class="text-center">
+           <h1 class="text-primary" style="font-size:7vh;">SignUp</h1>
+         
+       </div>
+       <form class="form-horizontal row bg-light" action="javascript:void(0)">
+            <div class="col-md-4 form-group" style="margin-left:33%">
+                    <label for="Name" class="label-control">Full Name:</label>
+                    <input class="form-control" id="fullName" placeholder="Enter your Full Name Here." type="type" onchange="document.getElementById('nameError').innerHTML = ''">
+                    <small class="text-danger font-weight-bold" id="nameError"></small>
+            </div>
+            <div class="col-md-4 form-group" style="margin-left:33%">
+                <label for="email" class="label-control">Email:</label>
+                <input class="form-control" id="emailSignup" placeholder="example@mail.com" type="email" onchange="document.getElementById('emailError').innerHTML = ''">
+                <small class="text-danger font-weight-bold" id="emailError"></small>
+        </div>
+        <div class="col-md-4 form-group" style="margin-left:33%">
+            <label for="password" class="label-control">Password:</label>
+            <input class="form-control" id="passwordSignup" placeholder="Enter Your Password Here." type="password" onchange="document.getElementById('passError').innerHTML = ''">
+            <small class="text-danger font-weight-bold" id="passError"></small>
+    </div>
+    <div class="col-md-4 form-group" style="margin-left:33%">
+        <label for="password" class="label-control">Repeat Password:</label>
+        <input class="form-control" id="RepeatpasswordSignup" placeholder="Repeat Your Password Here." type="password" onchange="document.getElementById('rpassError').innerHTML = ''">
+        <small class="text-danger font-weight-bold" id="rpassError"></small>
+    </div>
+     <div class="col-md-4 form-group" style="margin-left:33%">
+          <label for="Gender" class="label-control">Gender</label>
+          <select name="Gender" id="genderSelect" class="form-control select">
+              <option value="Select Gender" selected>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+          </select>  
+          <small id="errselect" class="text-danger font-weight-bold" ></small>        
+      </div>
+      <div class="col-md-4 form-group" style="margin-left:33%">
+          <label for="contact" class="label-control">Contact:</label>
+          <input class="form-control" id="Contact" placeholder="Enter Mobile Number Here." type="text" onchange="document.getElementById('numError').innerHTML = ''">
+          <small class="text-danger font-weight-bold" id="numError"></small>
+      </div>
+            <div class="col-md-4 form-group" style="margin-left:33%">
+                    <label for="check" class="label-control"><input type="checkbox" required>  Agree with terms and conditions</label>
+            </div>
+            <div class="col-md-4 form-group" style="margin-left:33%">
+                    <button class="btn btn-primary btn-block" onClick="signUp()">SignUp<span class="glyphicon glyphicon-user"></span></button>
+                    <div class="loader" id="signLoad"></div>
+            </div>
+           
+        </form>
+    </div>
+    <br><br>
+    <footer class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container"><h4 class="text-center"><span class="glyphicon glyphicon-copyright-mark"></span>2018 Copyright: all right reserved</h4></div>
+</footer>
+
+<script src="../js/auth.js"></script>
+
+</body>
+
+</html>

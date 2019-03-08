@@ -1,0 +1,68 @@
+body{
+    background: darkcyan;
+}
+#first{
+    text-align: center;
+    margin-top: 80px;
+}
+h1{
+    color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+}
+.input{
+    width: 40%;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    background: black;
+    color: wheat;
+    width: 60px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover{
+    background: wheat;
+    color: black;
+}
+#sec{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#Input {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px; 
+        background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
+}
+
+#data {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd; 
+    font-size: 18px; 
+}
+
+#data th, #data td {
+    text-align: left;
+    padding: 12px;
+}
+
+#data tr {
+    
+    border-bottom: 1px solid #ddd; 
+}
+
+#data tr.header, #data tr:hover {
+    
+    background-color: #f1f1f1;
+}

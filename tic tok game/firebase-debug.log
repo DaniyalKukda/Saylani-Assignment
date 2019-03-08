@@ -1,0 +1,87 @@
+[debug] [2018-09-11T18:01:35.568Z] ----------------------------------------------------------------------
+[debug] [2018-09-11T18:01:35.572Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AHSAN PC\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-09-11T18:01:35.572Z] CLI Version:   4.2.1
+[debug] [2018-09-11T18:01:35.572Z] Platform:      win32
+[debug] [2018-09-11T18:01:35.572Z] Node Version:  v8.11.4
+[debug] [2018-09-11T18:01:35.576Z] Time:          Tue Sep 11 2018 11:01:35 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-09-11T18:01:35.576Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-11T18:01:35.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-09-11T18:01:35.588Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\saylani\assigment\tic tok game
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-09-11T18:01:55.862Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-11T18:01:55.862Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-09-11T18:01:57.375Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-11T18:01:57.435Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-09-11T18:02:20.349Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1186:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2018-09-11T18:02:41.140Z] ----------------------------------------------------------------------
+[debug] [2018-09-11T18:02:41.144Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AHSAN PC\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-09-11T18:02:41.144Z] CLI Version:   4.2.1
+[debug] [2018-09-11T18:02:41.144Z] Platform:      win32
+[debug] [2018-09-11T18:02:41.144Z] Node Version:  v8.11.4
+[debug] [2018-09-11T18:02:41.144Z] Time:          Tue Sep 11 2018 11:02:41 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-09-11T18:02:41.144Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-11T18:02:41.156Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-09-11T18:02:41.156Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\saylani\assigment\tic tok game
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-09-11T18:02:52.926Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-09-11T18:02:54.228Z] <<< HTTP RESPONSE 200
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2018-09-11T18:03:08.845Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2018-09-11T18:03:09.233Z] <<< HTTP RESPONSE 200
+[info] +  Wrote public/index.html
+[info] 
+[info] i  Writing configuration info to firebase.json...
+[info] i  Writing project information to .firebaserc...
+[info] 
+[info] +  Firebase initialization complete!

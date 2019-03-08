@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+}
+.nb{
+    background: seagreen;
+    border-bottom-color: antiquewhite;
+    height: 60px;
+}
+.logo{
+    font-size: 4vh;
+    float: left;
+}
+.size{    
+    width: 35%; 
+}
+.s1{
+    margin-top: 5px;
+    color: dimgray;;
+    float: left;
+}
+.s1:hover{
+    border-color: deeppink;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  text-align: center;
+  font-family: arial;
+    background-color: azure;
+}

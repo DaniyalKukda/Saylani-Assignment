@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="loader" id="admin-load"></div>
+        
+    <div class="logo">
+                <h1 class="logoText">Sales <span>Management</span></h1>
+        </div>
+        <div id="Back-btn">
+               <a href="index.html"> <button> << Back </button></a>
+                </div>
+
+        <div id="admin-login" class="admin-login">
+                <h3 class="h1">Admin Login</h3>
+        
+                <form action="JavaScript:void(0)" onsubmit="adminLogin();">
+                        <p id="error" style="display:none; color:red;">username & Password is Invalid</p>
+                  <label class="eLabel"> Email :<input type="email" id="admin-email" required="required"></label><br />
+                  <label class="eLabel"> Password : <input type="password" id="admin-pass" required="required"></label><br />
+                  <input type="submit" class="admin-submit" value="Login">
+                </form>
+        </div>
+        
+    
+<script src="app.js"></script>
+    
+</body>
+</html>

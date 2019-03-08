@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Give Blood Information Page Blood Bank</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <nav>
+
+        <div class="toggle">
+
+            <a style="float:left" href="./home.html">donate<span style="font-family:hobo std; color:black;">B</span>lood</a>
+
+            <i class="fa fa-bars menu"></i>
+        </div>
+        <div class="logo">
+            <a href="./home.html">donate<span style="font-family:hobo std; color:black;">B</span>lood</a>
+            <sub style="color: white; font-family:hobo std;">Save Life!</sub>
+        </div>
+        <ul>
+            <li><a href="./home.html" id="home">Home</a></li>
+            <li><a href="./Details.html" id="give">Who Can Give Blood?</a></li>
+            <li><a href="./about.html" id="about">About Us</a></li>
+
+            <li class="reg" id="logout" onclick="logout()"><i class="fas fa-sign-out-alt"></i>Logout</li>
+            <a href="../pages/profile.html"><li class="reg" id="username"> UserName</li></a>
+            <li class="reg" id="checklog"><a href="../index.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        </ul>
+
+    </nav>
+    <h2 class="text-center bg-warning" id="chk">Please Login First....!</h2>
+    <div class="container" style="position:relative; height: 100%;" id="main">
+        <br><br>
+
+        <br>
+        <div class="col-md-12 col-xs-12" style="float: left;">
+            <u style="color:#EF5350">
+                <h2 style="color:#2d3436">Who Can Give Blood?</h2>
+            </u>
+            <p class="abhpara">Most people can give blood. You can give blood if you:</p>
+            <ol>
+                <li>are fit and healthy.</li>
+                <li>weigh between 7 stone 12 lbs and 25 stone, or 50kg and 160kg.</li>
+                <li>are aged between 17 and 66 (or 70 if you have given blood before).</li>
+                <li>are over 70 and have given blood in the last two years.</li>
+            </ol>
+            <h3 style="font-family:'hobo std'; font-weight:bold">The need for blood</h3>
+            <br>
+            <p class="abhpara">
+                We need to make sure that we have enough supplies of all blood groups and blood types to treat all
+                types of conditions.
+                <br><br>
+                By giving blood, every donor helps us meet the challenge of providing life-saving products whenever and
+                wherever they are needed.
+                <br><br>
+                We need to maintain a regular supply of all blood groups and types so we can provide it to the
+                hospitals and patients who need it.
+            </p>
+            <br>
+            <h3 style="font-family:'hobo std'; font-weight:bold">How often can I give blood?</h3>
+            <br>
+            <p class="abhpara">
+                Men can give blood every 12 weeks and women can give blood every 16 weeks.
+            </p>
+
+            <br>
+            <h3 style="font-family:'hobo std'; font-weight:bold">Check you are able to give blood</h3>
+            <br>
+            <p class="abhpara">
+                You can check some of the most common eligibility questions we receive from blood donors.
+                <br>
+
+                The common reasons donors should check if they can give blood are:
+            </p>
+            <ol style="list-style-type:circle;">
+                <li>if you are receiving medical or hospital treatment</li>
+                <li>if you are taking medication</li>
+                <li>after travelling outside of the UK</li>
+                <li>after having a tattoo or piercing</li>
+                <li>during and after pregnancy</li>
+                <li>if you feel ill</li>
+                <li>if you have cancer</li>
+                <li>after receiving blood, blood products or organs.</li>
+            </ol>
+
+            <br>
+            <h3 style="font-family:'hobo std'; font-weight:bold">Male and female donors</h3>
+            <br>
+            <p class="abhpara">
+                Men often make ideal donors because:
+            </p>
+            <ol style="list-style-type:circle;">
+                <li>men’s additional body weight means they have suitable iron levels</li>
+                <li>they are less likely than women to carry certain immune cells meaning their plasma is more widely
+                    usable for transfusions</li>
+                <li>their platelet count is typically higher meaning they are more likely to be accepted as platelet
+                    donors.</li>
+            </ol>
+            <br>
+            <h3 style="font-family:'hobo std'; font-weight:bold">Women under 20 - check if you can give blood</h3>
+            <br>
+            <p class="abhpara">
+
+                If you are a woman under 20 and you weigh under 10st 3lb or 65kg or are under 5' 6" or 168cm tall you
+                will
+                need to estimate your blood volume to see if you can give blood. If your weight lies between two of the
+                values shown, please use the nearest lower weight.
+
+            </p>
+
+            <br>
+            <h3 style="font-family:'hobo std'; font-weight:bold">Pregnancy</h3>
+            <br>
+            <p class="abhpara">
+                Pregnant women are always given a blood group test. This is because if the mother is RhD negative but
+                the
+                child has inherited RhD-positive blood from the father, it could cause complications if left untreated.
+                RhD-negative women of child-bearing age should always only receive RhD-negative blood..
+            </p>
+            <br>
+            <h3 style="font-family:'hobo std'; font-weight:bold">Blood Group</h3>
+            <br>
+            <p class="abhpara">
+                There are four main blood groups (types of blood) – A, B, AB and O. Your blood group is
+                determined by the genes you inherit from your parents.
+
+                Each group can be either RhD positive or RhD negative, which means in total there are eight main blood
+                groups.
+            </p>
+            <br>
+            <h3 style="font-family:'hobo std'; font-weight:bold">The ABO system</h3>
+            <br>
+            <p class="abhpara">
+                There are four main blood groups defined by the ABO system:
+
+                <ol style="list-style-type:circle;">
+                    <li>blood group A – has A antigens on the red blood cells with anti-B antibodies in the plasma</li>
+                    <li>blood group O – has no antigens, but both anti-A and anti-B antibodies in the plasma</li>
+                    <li>blood group AB – has both A and B antigens, but no antibodies</li>
+                    <li>Blood group O is the most common blood group. Almost half of the UK population (48%) has blood group O.</li>
+                </ol>
+
+                Receiving blood from the wrong ABO group can be life threatening. For example, if someone with group B
+                blood is given group A blood, their anti-A antibodies will attack the group A cells.
+
+                This is why group A blood must never be given to someone who has group B blood and vice versa.
+
+                As group O red blood cells don't have any A or B antigens, it can safely be given to any other group.
+
+                The NHS Blood and Transplant (NHSBT) website has more information about the different blood groups.
+            </p>
+
+            <br>
+            <h3 style="font-family:'hobo std'; font-weight:bold">The Rh system</h3>
+            <br>
+            <p class="abhpara">
+
+                Red blood cells sometimes have another antigen, a protein known as the RhD antigen. If this is present,
+                your blood group is RhD positive. If it's absent, your blood group is RhD negative.
+                <br>
+                This means you can be one of eight blood groups:
+
+                <ol style="list-style-type:circle;">
+                    <li>A RhD positive (A+)</li>
+                    <li> A RhD negative (A-)</li>
+                    <li>B RhD positive (B+)</li>
+                    <li>B RhD negative (B-)</li>
+                    <li>O RhD positive (O+)</li>
+                    <li>O RhD negative (O-)</li>
+                    <li> AB RhD positive (AB+)</li>
+                    <li>AB RhD negative (AB-)</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <footer style="margin-top:5%;">
+        <h4 style="text-align:center; padding-top:20px;"><i class="far fa-copyright"></i> Copyright : all Right
+            Reserved.</h4>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggleClass('active')
+            })
+        })
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/home.js"></script>
+
+</body>
+
+</html>

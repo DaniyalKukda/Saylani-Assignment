@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color:blanchedalmond">
+        <div class="logo">
+                <h1 class="logoText">Admin <span>Panel</span></h1>
+              </div>
+              <div id="employee-register-btn">
+                    <button onclick="addNew()" id="myBtn">Add New</button>
+                    </div>
+                    
+                    <div id="admin-register-btn">
+                     <button id="admin-login-btn" onclick="location = 'index.html'">Back</button>
+                      </div>
+    <div id="content">
+        <div>
+            <h1>Item 1</h1>
+            <p>
+                    <b>
+                    <span>Brand</span>
+                    <span>&nbsp;Model</span>
+                    <span>&nbsp;&nbsp;Processor</span>
+                    <span>&nbsp;Display</span>
+                    <span>&nbsp;Ram</span>
+                    <span>&nbsp;HardDisk</span>
+                    <span>&nbsp;&nbsp;Battery</span>
+                    <span>&nbsp;&nbsp;Price</span>
+                </b>
+                </p>
+            <p>
+                <span id="data1brand">Lenovo</span>
+                <span id="data1name">Core 2 duo</span>
+                <span id="data1processor">2.0 Pocessor</span>
+                <span id="data1screen">14 Inch</span>
+                <span id="data1ram">512 Gb</span>
+                <span id="data1rom">40 Gb</span>
+                <span id="data1battery">4000 Mah</span>
+                <span id="data1price">80'000 PKR</span>
+            </p>
+            
+            <button onclick="this.parentNode.remove();">Delete</button>
+        </div>
+        <div>
+                <h1>Item 2</h1>
+                <p>
+                        <b>
+                        <span>Brand</span>
+                        <span>&nbsp;Model</span>
+                        <span>&nbsp;&nbsp;Processor</span>
+                        <span>&nbsp;Display</span>
+                        <span>&nbsp;Ram</span>
+                        <span>&nbsp;HardDisk</span>
+                        <span>&nbsp;&nbsp;Battery</span>
+                        <span>&nbsp;&nbsp;Price</span>
+                    </b>
+                    </p>
+                <p>
+                    <span id="data2brand">Asus</span>
+                    <span id="data2name">Dual Core</span>
+                    <span id="data2processor">2.8 processor</span>
+                    <span id="data2screen">15.0 inch</span>
+                    <span id="data2ram">1 Gb</span>
+                    <span id="data2rom">80 Gb</span>
+                    <span id="data2battery">6500 MAH</span>
+                    <span id="data2price">10'000 PKR</span>
+                </p>
+                
+                <button onclick="this.parentNode.remove();">Delete</button>
+            </div>
+            <div>
+                    <h1>Item 3</h1>
+                    <p>
+                        <b>
+                        <span>Brand</span>
+                        <span>&nbsp;Model</span>
+                        <span>&nbsp;&nbsp;Processor</span>
+                        <span>&nbsp;Display</span>
+                        <span>&nbsp;Ram</span>
+                        <span>&nbsp;HardDisk</span>
+                        <span>&nbsp;&nbsp;Battery</span>
+                        <span>&nbsp;&nbsp;Price</span>
+                    </b>
+                    </p>
+                    <p>
+                        <span id="data3brand">Dell</span>
+                        <span id="data3name">core i3</span>
+                        <span id="data3processor">3.0 processor</span>
+                        <span id="data3screen">16.0 inch</span>
+                        <span id="data3ram">3 GB</span>
+                        <span id="data3rom">120 GB</span>
+                        <span id="data3battery">7000 MAH</span>
+                        <span id="data3price">13'000 PKR</span>
+                    </p>
+                    
+                    <button onclick="this.parentNode.remove();">Delete</button>
+                </div>
+                <div>
+                    <h1>Item 4</h1>
+                    <p>
+                        <b>
+                        <span>Brand</span>
+                        <span>&nbsp;Model</span>
+                        <span>&nbsp;&nbsp;Processor</span>
+                        <span>&nbsp;Display</span>
+                        <span>&nbsp;Ram</span>
+                        <span>&nbsp;HardDisk</span>
+                        <span>&nbsp;&nbsp;Battery</span>
+                        <span>&nbsp;&nbsp;Price</span>
+                    </b>
+                    </p>
+                    <p>
+                        <span id="data4brand">Hp</span>
+                        <span id="data4name">core i5</span>
+                        <span id="data4processor">4.50 processor</span>
+                        <span id="data4screen">18.5 inch</span>
+                        <span id="data4ram">4 GB</span>
+                        <span id="data4rom">250 GB</span>
+                        <span id="data4battery">6000 MAH</span>
+                        <span id="data4price">15'000 PKR</span>
+                    </p>
+                    
+                    <button onclick="this.parentNode.remove();">Delete</button>
+                </div>
+                <div>
+                    <h1>Item 5</h1>
+                    <p>
+                        <b>
+                        <span>Brand</span>
+                        <span>&nbsp;Model</span>
+                        <span>&nbsp;&nbsp;Processor</span>
+                        <span>&nbsp;Display</span>
+                        <span>&nbsp;Ram</span>
+                        <span>&nbsp;HardDisk</span>
+                        <span>&nbsp;&nbsp;Battery</span>
+                        <span>&nbsp;&nbsp;Price</span>
+                    </b>
+                    </p>
+                    <p>
+                        <span id="data5brand">Lenovo</span>
+                        <span id="data5name">core i5</span>
+                        <span id="data5processor">4.0 processor</span>
+                        <span id="data5screen">17.0 inch</span>
+                        <span id="data5ram">4 GB</span>
+                        <span id="data5rom">500 GB</span>
+                        <span id="data5battery">7000 MAH</span>
+                        <span id="data5price">16'000 PKR</span>
+                    </p>
+                    
+                    <button onclick="this.parentNode.remove();">Delete</button>
+                </div>
+                <div>
+                    <h1>Item 6</h1>
+                    <p>
+                        <b>
+                        <span>Brand</span>
+                        <span>&nbsp;Model</span>
+                        <span>&nbsp;&nbsp;Processor</span>
+                        <span>&nbsp;Display</span>
+                        <span>&nbsp;Ram</span>
+                        <span>&nbsp;HardDisk</span>
+                        <span>&nbsp;&nbsp;Battery</span>
+                        <span>&nbsp;&nbsp;Price</span>
+                    </b>
+                    </p>
+                    <p>
+                        <span id="data6brand">Apple</span>
+                        <span id="data6name">MacBook</span>
+                        <span id="data6processor">8.0 processor</span>
+                        <span id="data6screen">17.5 inch</span>
+                        <span id="data6ram">8 GB</span>
+                        <span id="data6rom">750 GB</span>
+                        <span id="data6battery">10000 MAH</span>
+                        <span id="data6price">28'000 PKR</span>
+
+                    </p>
+                   
+                    <button onclick="this.parentNode.remove();">Delete</button>
+                </div>
+                <div>
+                    <h1>Item 7</h1>
+                    <p>
+                        <b>
+                        <span>Brand</span>
+                        <span>&nbsp;Model</span>
+                        <span>&nbsp;&nbsp;Processor</span>
+                        <span>&nbsp;Display</span>
+                        <span>&nbsp;Ram</span>
+                        <span>&nbsp;HardDisk</span>
+                        <span>&nbsp;&nbsp;Battery</span>
+                        <span>&nbsp;&nbsp;Price</span>
+                    </b>
+                    </p>
+                    <p>
+                        <span id="data7brand">Lenovo</span>
+                        <span id="data7name">Core i3</span>
+                        <span id="data7processor">3.0 processor</span>
+                        <span id="data7screen">16.0 inch</span>
+                        <span id="data7ram">3 GB</span>
+                        <span id="data7rom">120 GB</span>
+                        <span id="data7battery">7000 MAH</span>
+                        <span id="data7price">16'500 PKR</span>
+                    </p>
+                   
+                    <button onclick="this.parentNode.remove();">Delete</button>
+                </div>
+                <div id="add-new"></div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>

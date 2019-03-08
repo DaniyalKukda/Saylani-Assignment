@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Olx App</title>
+</head>
+
+<body>
+    <nav>
+
+        <div class="toggle">
+
+            <a style="float:left" href="../index.html">Olx</a>
+
+            <i class="fa fa-bars menu"></i>
+        </div>
+        <div class="logo">
+            <a href="../index.html">Olx</a>
+        </div>
+        <ul style="text-align:right">
+            <li id="logout" onclick="logout()" class="reg"><i class="fas fa-sign-out-alt"></i>LogOut</li>
+            <a href="./details.html">
+                <li id="username">UserName</li>
+            </a>
+            <li id="dashboard"> <i class="fas fa-tachometer-alt"></i><a href="./home.html">Dashboard</a></li>
+            <li id="signin"><a href="./signin.html.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        </ul>
+
+    </nav>
+
+    <h1 style="background:yellow; color: black; display: none; margin-top:50px;" id="chk">Please Login First to
+        Continue....>!</h1>
+        <div id="frame">
+            <div id="sidepanel">
+                <div id="profile">
+                    <div class="wrap">
+                        <img id="profile-img" src="" class="online" alt="" />
+                        <p id='username2'>Loading...</p>
+                        
+                    </div>
+                </div>
+                
+                <div id="contacts">
+                    <div class="contactHeading">Chats</div>
+                        <div id="chatUsers">
+
+
+
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="content">
+                <div class="contentOverlay">
+                    <div class="row">
+                        <h2 class="overlayHeading">
+                            Connect With Peoples.
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="overlaySubHeading">
+                            Select a conversation to start chatting.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contentToShow">
+                    <div class="contact-profile">
+                        <div>
+                            <i style="position:relative;" onclick="goBack()" class="fa fa-arrow-left goBack" aria-hidden="true"></i>
+                        </div>
+                        <img id='friendImg' src="" alt="" />
+                        <p id="toChatWith"></p>
+                    </div>
+                    <div class="messages">
+                        <ul id='msgList'>
+                            <li class="sent">
+                                <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                                <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+                            </li>
+                            <li class="replies">
+                                <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                <p>When you're backed against the wall, break the god damn thing down.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="message-input">
+                        <div class="wrap">
+                            <input type="text" placeholder="Write your message..." />
+                            <i class="fa fa-paperclip attachment" aria-hidden="true"></i>
+                            <button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div<footer>
+
+                <h4 style="text-align:center; font-size: 20px; padding-top:20px;"><i class="far fa-copyright"></i> Copyright :
+                    all Right
+                    Reserved.</h4>
+            </footer>>
+        </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggleClass('active')
+            })
+        })
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="../js/pr.js"></script> -->
+    <script>
+        var config = {
+    apiKey: "AIzaSyCG5qiYp5nmDAP9frZkAD8Vu2a_I52RzZ0",
+    authDomain: "olxapp-1997.firebaseapp.com",
+    databaseURL: "https://olxapp-1997.firebaseio.com",
+    projectId: "olxapp-1997",
+    storageBucket: "olxapp-1997.appspot.com",
+    messagingSenderId: "336667453418"
+};
+firebase.initializeApp(config);
+
+        function logout() {
+    firebase.auth().signOut().then((suc) => {
+        swal("Successfully Logout !");
+
+        localStorage.setItem('checkAuth', JSON.stringify({ users: "null" }));
+        window.location = "../index.html"
+    }).catch((err) => {
+        alert(err);
+        console.log(err);
+    })
+}
+    window.addEventListener('load', async function () {
+    await checkAuth();
+    userName();
+})
+async function checkAuth() {
+    var get = await localStorage.getItem("checkAuth")
+    let data = JSON.parse(get)
+    if (data.users !== "null") {
+        document.getElementById('chk').style.display = "none"
+        document.getElementById('logout').style.display = "block"
+        document.getElementById('signin').style.display = "none"
+
+    } else {
+        document.getElementById('frame').style.display = "none"
+        document.getElementById('chk').style.display = "block"
+        document.getElementById('username').style.display = "none"
+        document.getElementById('logout').style.display = "none"
+        document.getElementById('dashboard').style.display = "none"
+
+    }
+}
+function userName() {
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user !== null) {
+            let id = user.uid;
+            firebase.database().ref("userData/" + id).once("value", (userData) => {
+                let data = userData.val();
+                document.getElementById("username").innerHTML = `<img src=${data.profile} height='25' width='25' class='profileimg' />` + " " + data.fullName;
+                $("#profile-img").attr("src", data.profile);
+                document.getElementById("username2").innerHTML = data.fullName;
+            })
+        }
+    })
+    users();
+    function users(){
+
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user !== null) {
+            let id = user.uid;
+            firebase.database().ref("userData/" + id).once("value", (userData) => {
+                let data = userData.val();
+                document.getElementById("username").innerHTML = `<img src=${data.profile} height='25' width='25' class='profileimg' />` + " " + data.fullName;
+                $("#profile-img").attr("src", data.profile);
+                document.getElementById("username2").innerHTML = data.fullName;
+            })
+        }
+    })
+    firebase.database().ref("chats/"+uid).once("value",(data)=>{
+        const d = data.val();
+        if(d!==null){
+            var array = [];
+            for(var key in d){
+                array.push(key);
+                firebase.database().ref("users/"+key).on("value",(d)=>{
+                    var u = d.val();
+                     document.getElementById("chatUsers").innerHTML += `
+                            <div class='chats'>
+                                <div class='chatHeader' style='background-color:white; cursor: pointer;' onclick='getChats("${array[0]}" , "${u.profilePic}" , "${u.name}")'>
+                                <p class='backButton'><i class='fa fa-angle-right'></i></p>
+                                <p class='Userdp'><img src='${u.profilePic}' height='40px' width='40px'></p>
+                                <p class='cNameandImg'>${u.name}</p>
+                                </div>
+                            </div>
+                        `
+                        array.shift();
+                })
+                
+            }
+        }
+        else if(d===null){
+            document.getElementById("chatUsers").innerHTML = `
+                    <div class='chats'>
+                        <p class='noChats'>No Chats Right Now!</p>
+                    </div>
+            `
+        }
+    })
+
+    }
+
+}
+
+    </script>
+
+</body>
+
+</html>
